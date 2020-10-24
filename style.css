@@ -1,0 +1,24 @@
+
+body {
+	background-color: #16697a;
+	text-align: center;
+	margin: 5em;
+ 	touch-action: none;
+}
+
+h1 {
+	color: #ffa372;
+	font-size: 5em;
+}
+
+h2 {
+	/* color: #ed6663; */
+	font-size: 8em;
+}
+
+button {
+	color: black;
+	background-color: #ed6663;
+	font-size: 6em;
+	border-radius: 10px;
+}
