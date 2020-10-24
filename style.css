@@ -4,21 +4,22 @@ body {
 	text-align: center;
 	margin: 5em;
  	touch-action: none;
+	font-family: Helvetica, Arial;
 }
 
 h1 {
 	color: #ffa372;
-	font-size: 5em;
+	font-size: 4.5em;
 }
 
 h2 {
 	/* color: #ed6663; */
-	font-size: 8em;
+	font-size: 6em;
 }
 
 button {
 	color: black;
 	background-color: #ed6663;
-	font-size: 6em;
+	font-size: 5.5em;
 	border-radius: 10px;
 }
