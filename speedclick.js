@@ -60,7 +60,7 @@ function printResult(){
 	} else if (result = 100){
 		document.getElementById("titleText").innerHTML = "Bravo, vous avez réussi en " + time + " secondes !";
 		/*document.getElementById("buttonText").innerHTML = "Next =>";
-		setTimeout(endLevel, 1800);
-	}*/
+		setTimeout(endLevel, 1800);*/
+	}
 }
 
