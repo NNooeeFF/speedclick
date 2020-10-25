@@ -57,9 +57,9 @@ function printResult(){
 	} else if (result >= 95 && result < 100){
 		result -= 7;
 		document.getElementById("textResultat").innerHTML = result;
-	} /*else if (result = 100){
-		document.getElementById("titleText").innerHTML = "Bravo, vous avez réussi en " + time + " secondes ! Passer au niveau suivant ?";
-		document.getElementById("buttonText").innerHTML = "Next =>";
+	} else if (result = 100){
+		document.getElementById("titleText").innerHTML = "Bravo, vous avez réussi en " + time + " secondes !";
+		/*document.getElementById("buttonText").innerHTML = "Next =>";
 		setTimeout(endLevel, 1800);
 	}*/
 }
