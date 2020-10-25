@@ -11,7 +11,7 @@ alert ("Pour ce niveau, vous aurez besoin d'un 2e pouce, ready ?");
 
 var myVar = setInterval(printResult, 1000);
 var myVar = setInterval(timer, 1000);
-var myVar = setInterval(changer, 2000);
+var myVar = setInterval(changer, 1500);
 
 function timer(){
 	if (result < 200){
@@ -92,7 +92,7 @@ function printResult(){
 		result -= 7;
 		document.getElementById("textResultat").innerHTML = result;
 	} else if (result = 200){
-		document.getElementById("titleText").innerHTML = "Bravo, vous avez réussi en " + time + " secondes !";
+		document.getElementById("titleText").innerHTML = "C'était un peu long, mais vous avez réussi ;) => " + time + " secondes !";
 		/*document.getElementById("buttonText").innerHTML = "Next =>";
 		setTimeout(endLevel, 1800);*/
 	}
