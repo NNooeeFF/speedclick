@@ -1,18 +1,20 @@
 
-let result = 11
+let result = 101
 let level = 1
 let time = 0
 let readyToLeave = false
+
+let change = false
 
 alert ("Pour ce niveau, vous aurez besoin d'un 2e pouce, ready ?");
 
 
 var myVar = setInterval(printResult, 1000);
 var myVar = setInterval(timer, 1000);
-
+var myVar = setInterval(changer, 2000);
 
 function timer(){
-	if (result < 100){
+	if (result < 200){
 		time += 1;
 	} else {
 		time += 0;
@@ -29,35 +31,67 @@ function nextLevel(){
 }
 
 
-function addOne(){
-	if (result < 100){
-		result += 1;
-		document.getElementById("textResultat").innerHTML = result;
+function changer(){
+	var random_boolean = Math.random() >= 0.5;
+	change = random_boolean;
+	if (change){
+		document.getElementById("button1").innerHTML = "+1";
+		document.getElementById("button2").innerHTML = "-1";
 	} else {
-		result += 0;
-		/*if (readyToLeave = true) {
-			nextLevel();
-		}*/
+		document.getElementById("button1").innerHTML = "-1";
+		document.getElementById("button2").innerHTML = "+1";
 	}
 }
 
+
+function buttonOne(){
+	if (result < 200){
+		if (!change) {
+			result -= 1;
+			document.getElementById("textResultat").innerHTML = result;
+		} else {
+			result += 1;
+			document.getElementById("textResultat").innerHTML = result;
+		}
+	} else {
+		result += 0;
+	}
+}
+
+
+function buttonTwo(){
+	if (result < 200){
+		if (!change) {
+			result += 1;
+			document.getElementById("textResultat").innerHTML = result;
+		} else {
+			result -= 1;
+			document.getElementById("textResultat").innerHTML = result;
+		}
+	} else {
+		result += 0;
+	}
+}
+
+
+
 function printResult(){
-	if (result < 30) {
+	if (result < 130) {
 		result -= 1;
 		document.getElementById("textResultat").innerHTML = result;
-	} else if (result >= 30 && result < 45){
+	} else if (result >= 130 && result < 145){
 		result -= 3;
 		document.getElementById("textResultat").innerHTML = result;
-	} else if (result >= 45 && result < 60){
+	} else if (result >= 145 && result < 160){
 		result -= 4;
 		document.getElementById("textResultat").innerHTML = result;
-	} else if (result >= 60 && result < 95){
+	} else if (result >= 160 && result < 195){
 		result -= 5;
 		document.getElementById("textResultat").innerHTML = result;
-	} else if (result >= 95 && result < 100){
+	} else if (result >= 195 && result < 200){
 		result -= 7;
 		document.getElementById("textResultat").innerHTML = result;
-	} else if (result = 100){
+	} else if (result = 200){
 		document.getElementById("titleText").innerHTML = "Bravo, vous avez réussi en " + time + " secondes !";
 		/*document.getElementById("buttonText").innerHTML = "Next =>";
 		setTimeout(endLevel, 1800);*/
