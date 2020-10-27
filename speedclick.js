@@ -8,7 +8,7 @@ alert ("Vous allez jouer à un jeu addictif, continuer ?");
 
 
 var myVar = setInterval(printResult, 1000);
-var myVar = setInterval(timer, 1000);
+var myVar = setInterval(timer, 10);
 
 
 function timer(){
@@ -58,7 +58,7 @@ function printResult(){
 		result -= 6;
 		document.getElementById("textResultat").innerHTML = result;
 	} else if (result = 100){
-		document.getElementById("titleText").innerHTML = "Bravo, vous avez réussi en " + time + " secondes !";
+		document.getElementById("titleText").innerHTML = "Bravo, vous avez réussi en " + time / 100 + " secondes !";
 		/*document.getElementById("buttonText").innerHTML = "Next =>";
 		setTimeout(endLevel, 1800);*/
 	}
