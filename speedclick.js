@@ -55,7 +55,7 @@ function printResult(){
 		result -= 5;
 		document.getElementById("textResultat").innerHTML = result;
 	} else if (result >= 95 && result < 100){
-		result -= 7;
+		result -= 6;
 		document.getElementById("textResultat").innerHTML = result;
 	} else if (result = 100){
 		document.getElementById("titleText").innerHTML = "Bravo, vous avez réussi en " + time + " secondes !";
