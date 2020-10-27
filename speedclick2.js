@@ -80,16 +80,16 @@ function printResult(){
 		result -= 1;
 		document.getElementById("textResultat").innerHTML = result;
 	} else if (result >= 130 && result < 145){
-		result -= 3;
+		result -= 2;
 		document.getElementById("textResultat").innerHTML = result;
 	} else if (result >= 145 && result < 160){
-		result -= 4;
+		result -= 3;
 		document.getElementById("textResultat").innerHTML = result;
 	} else if (result >= 160 && result < 195){
-		result -= 5;
+		result -= 4;
 		document.getElementById("textResultat").innerHTML = result;
 	} else if (result >= 195 && result < 200){
-		result -= 7;
+		result -= 5;
 		document.getElementById("textResultat").innerHTML = result;
 	} else if (result = 200){
 		document.getElementById("titleText").innerHTML = "C'était un peu long, mais vous avez réussi ;) => " + time + " secondes !";
