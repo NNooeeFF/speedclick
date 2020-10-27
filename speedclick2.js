@@ -32,7 +32,7 @@ function nextLevel(){
 
 
 function changer(){
-	var random_boolean = Math.random() >= 0.5;
+	var random_boolean = Math.random() >= 0.4;
 	change = random_boolean;
 	if (change){
 		document.getElementById("button1").innerHTML = "+1";
